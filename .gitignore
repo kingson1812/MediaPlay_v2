@@ -1,0 +1,8 @@
+Debug
+
+obj
+*.suo
+*.chm
+*.pdb
+*.exe
+/Bin/*.manifest
