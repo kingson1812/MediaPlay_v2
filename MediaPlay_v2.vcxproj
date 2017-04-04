@@ -20,7 +20,7 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{BB4F1568-CDF3-4D5D-94AC-15268CA2FDE1}</ProjectGuid>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <Keyword>ManagedCProj</Keyword>
     <RootNamespace>MediaPlay_v2</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
@@ -29,7 +29,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v140</PlatformToolset>
+    <PlatformToolset>v120</PlatformToolset>
     <CLRSupport>true</CLRSupport>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
@@ -92,6 +92,7 @@
     </ClCompile>
     <Link>
       <AdditionalDependencies>openGL32.lib;glu32.lib;gdi32.lib;User32.lib</AdditionalDependencies>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -130,19 +131,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Code\ContextManager.h" />
     <ClInclude Include="Code\GLUtility.h" />
     <ClInclude Include="Code\MainFrame.h">
       <FileType>CppForm</FileType>
     </ClInclude>
+    <ClInclude Include="Code\Vertex.h" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Code\MainFrame.resx" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Code\AssemblyInfo.cpp" />
+    <ClCompile Include="Code\ContextManager.cpp" />
     <ClCompile Include="Code\GLUtility.cpp" />
     <ClCompile Include="Code\Main.cpp" />
     <ClCompile Include="Code\MainFrame.cpp" />
+    <ClCompile Include="Code\Vertex.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
