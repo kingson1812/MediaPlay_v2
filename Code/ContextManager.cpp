@@ -21,7 +21,7 @@ void ContextManager::LoadModel(const string& filepath, Vertex *& vertex)
 
 		if (!head.compare("end_header"))
 		{
-			//float line[8];
+			//float line[8]; 
 			//fscanf(p, "%f %f %f %f %f %f %f %f", &line);
 		}
 	}

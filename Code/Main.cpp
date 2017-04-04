@@ -9,7 +9,7 @@ int main()
 	Application::SetCompatibleTextRenderingDefault(false);
 	ContextManager *c = new ContextManager();
 	Vertex *v;
-	c->LoadModel("/../Asset/Dragon.ply", v);
+	c->LoadModel("/../Asset/Man.obj", v);
 
 	Application::Run(gcnew MainFrame());
 }
