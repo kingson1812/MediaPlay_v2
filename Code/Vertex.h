@@ -1,9 +1,10 @@
+#pragma once
 #include <stdio.h>
 #include "_Math.h"
 
 struct Vertex
 {
-	 Vector3	m_pos;
+	Vector3	m_pos;
 	Vector2	m_uv;
 
 	Vertex();
@@ -13,5 +14,5 @@ struct Vertex
 };
 
 #define	OFFSET_POS	0
-#define	OFFSET_UV	12
+#define	OFFSET_UV	12 //4 bytes x 3 values
 

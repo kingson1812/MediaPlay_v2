@@ -7,5 +7,5 @@ using namespace std;
 class ContextManager
 {
 public:
-	void LoadModel(const string& filePath, Vertex*& vertex);
+	ContextManager();
 };

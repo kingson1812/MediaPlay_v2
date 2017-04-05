@@ -1,8 +1,5 @@
 #pragma once
-
-#include <windows.h>
-#include <GL/gl.h>
-#include <GL/glu.h>
+#include "OpenGL.h"
 
 namespace Forms = System::Windows::Forms;
 namespace Draw = System::Drawing;

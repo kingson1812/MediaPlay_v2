@@ -1,7 +1,7 @@
 #pragma once
 
 #include "Define.h"
-#include <GL/gl.h>
+#include "OpenGL.h"
 
 //Vector2
 
